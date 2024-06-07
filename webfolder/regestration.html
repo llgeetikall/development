@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Platypi:ital,wght@0,300..800;1,300..800&display=swap');
+
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+       height: 100%;
+       margin-top: 100px;
+       margin-left: 600px;
+       font-family:"Platypi", serif;
+    }
+
+    .card {
+       width: 364px;
+      height: 540px;
+       border: 1px solid #110e14;
+       background: #110e14;
+       color: white;
+       border-radius: 4px;
+    }
+    p{
+        padding-top: 8px;
+        padding-bottom: 6px;
+        text-align: center;
+        font-size: 26px;
+        text-transform: capitalize;
+        background: #3c3c3c;
+    }
+    .container{
+        margin-left: 30px;
+        margin-top: 30px;
+    }
+    label{
+        text-transform: capitalize;
+        font-size: 20px;
+        font-weight: 300;
+    }
+    input{
+       padding: 6px;
+        border-radius: 2px;
+        border: none;
+       margin: 10px;
+    }
+    .radio{
+        font-size: 16px;
+    }
+    button{
+        border: 1px solid  #110e14;
+        padding: 10px;
+        margin-left: 95px;
+        margin-top: 7px;
+        margin-bottom: 5px;
+        border-radius: 17px;
+    
+    }
+    button:hover{
+        border: 2px solid  #110e14;
+        transform: translateZ();
+        transform: 0.5 all;
+        box-shadow: 0 6px 40px #fff;
+        cursor: pointer;
+    }
+    .loged{
+        font-size: 12px;
+        background: #110e14;
+    }
+    span a{
+        color: #ed2553;
+        text-decoration: none;
+    }
+</style>
+
+<body>
+    <div class="card">
+        <form action="">
+            <p>Registration form</p>
+            <div class="container">
+            <label for="">First Name</label> <br>
+            <input type="text" placeholder=" Enter First Name" size="30px"> <br>
+            <label for="">Last Name</label> <br>
+            <input type="text"  placeholder=" Enter Last Name" size="30px"> <br>
+            <label for="">email</label> <br>
+            <input type="email"  placeholder=" Enter your email" size="30px"> <br>
+            <label for="">Address</label> <br>
+            <input type="text"  placeholder="district/ state" size="30px"> <br>
+            <label for=""> gender</label> <br>
+            <input type="radio">
+            <label for="" class="radio">female</label>
+            <input type="radio" >
+            <label for="" class="radio">male</label>
+            <input type="radio">
+            <label for="" class="radio">other</label> <br>
+            <button>Register Now</button> 
+            <p class="loged">already have an account? <span> <a href="loginpage.html">login now </a></span></p>
+        </div>
+        </form>
+    </div>
+</body>
+
+</html>

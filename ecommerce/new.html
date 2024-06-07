@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+
+    </style>
+</head>
+<body>
+    
+    <table class=" flex  h-[50vh]  justify-center items-center border-2 border-stone-600 text-center  rounded text-3xl ">
+        <tr >
+            <td class="border-2 border-black ">a</td>
+            <td class="border-2 border-black ">b</td>
+            <td class="border-2 border-black ">c</td>
+            <td class="border-2 border-black ">d</td>
+        </tr>
+        <tr>
+            <td class="border-2 border-black ">1</td>
+            <td class="border-2 border-black ">2</td>
+            <td class="border-2 border-black ">3</td>
+            <td class="border-2 border-black ">4</td>
+        </tr>
+    </table>
+    <button id="menu">Menu</button>
+
+    <ul class="hidden border-2 border-black" id="block">
+        <li>Home</li>
+        <li>Products</li>
+        <li>Details</li>
+        <li>Collection</li>
+        <li>Contact us</li>
+    </ul>
+
+ <button id="time"> watch time here</button>
+
+<p id="showtime"></p>
+<script>
+        // print even numbers from 1 to 50.
+        var i = 1;
+        for(i; i<= 50 ; i++){
+            if ( i % 2==0){
+                console.log(i)
+            }
+        }
+        // print table 4
+        var i = 1;
+        for( i; i<= 10; i++ ){
+            console.log("4 * "+ i +"=" + 4*i )
+        }
+        // print the number is weather positive  or negative 
+     let a = 5;
+     if (a < 0){
+        console.log("number is positive")
+     }
+    else{
+        console.log('number is not positive')
+    }      
+//  print  odd and even number.
+     var n= 50;
+     for(var i =1 ; i<=n; i++){
+        if (i %2==0 ){
+            console.log(i +"number are even")
+        }
+        else{
+            console.log(i+"numbers are odd")
+        }
+     }
+    //  print ticket price on the basis of age 
+
+    var age=10;
+    var ticketprice;
+
+    if( age < 12){
+     ticketprice = 5;
+    }
+    else if (age >=12 && age < 18){
+        ticketprice = 10;
+    }
+    else if (age >= 18 && age<60)
+    {
+        ticketprice = 20;
+    }
+    else {
+        ticketprice =15;
+    }
+     
+    console.log('ticketprice '+ ticketprice);
+
+
+//   print price on the basis of applied discount
+    var price = 60;
+    var discount;
+
+    if (price >=100 && price >100){
+        discount =20 ;
+    }
+    else if (price >= 50 && price >50){
+        discount = 10 ;
+    }
+ else {
+    discount= 15;
+ }
+ console.log('discount :' + ' ' + discount);
+
+    const menu = document.getElementById("menu")
+
+    menu.addEventListener('click', displaydate)
+
+    function displaydate(){
+        document.getElementById('menu').innerHTML = Date()
+    }
+
+    // event listener
+    const tym = document.getElementById('time')
+    const date = document.getElementById('showtime')
+
+tym.addEventListener('click',function() {date.innerHTML=date()})
+
+
+    </script>
+</body>
+</html>

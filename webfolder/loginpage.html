@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Platypi:ital,wght@0,300..800;1,300..800&display=swap');
+    *{
+        margin: 0px;
+        padding: 0px;
+    }
+    body{
+        height: 100%;
+        margin-top: 100px;
+        margin-left: 580px;
+     font-family:"Platypi", serif;
+    }
+    .code{
+        width: 312px;
+        height: 353px;
+        background:#fff;
+        color:#17120d;
+        border: 1px solid #fff;
+        box-shadow: 0px 2px 5px #2f3542;
+        /* transform: translate3d(); */
+        /* padding-left: 20px; */
+    }
+    .code:hover{
+        border: 2px solid #fff;
+        transform: translateY();
+        transform: 0.5 all;
+        box-shadow: 0 6px 10px  #2f3542 ;
+        cursor: pointer;
+    }
+    .info{
+        margin-left: 30px;
+        margin-top: 30px;
+    }
+    p{
+        padding-top: 8px;
+        padding-bottom: 6px;
+        text-align: center;
+        font-size: 26px;
+        text-transform: capitalize;
+        background:rgb(178, 176, 176);
+    }
+    label{
+        text-transform: capitalize;
+        font-size: 20px;
+        font-weight: 300;
+    }
+    input{
+       padding: 6px;
+        border-radius: 1px;
+        border-bottom: 1px solid rgb(178, 176, 176);
+        border-left: none;
+        border-top: none;
+        border-right: none;
+        /* border: 1px solid rgb(178, 176, 176); */
+       margin: 10px;
+    }
+    
+    button{
+        border: 1px solid  #110e14;
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        margin-left: 91px;
+        margin-top: 17px;
+        margin-bottom: 16px;
+        border-radius: 17px;
+    
+    }
+    button:hover{
+        border: 2px solid  #110e14;
+        transform: translateZ();
+        transform: 0.2 all;
+        box-shadow: 0 4px 9px #2f3542;
+        cursor: pointer;
+    }
+    
+    .txt p{
+        font-size: 11px;
+        background:rgb(178, 176, 176);
+       cursor: pointer;
+    
+    }
+    a{
+        text-decoration: none;
+        font-size: 12px;
+        color: #110e14;
+    }
+    span a{
+        color: #ed2553;
+        
+    }
+</style>
+<body>
+    <div class="code">
+    <form action="">
+       
+        <p><i class="fa-solid fa-user"></i> User login</p>
+        <div class="info">
+            <label for=""> user email</label> <br>
+            <input type="text" placeholder=" Enter your Mail" size="30px"> <br>
+            <label for=""> password</label> <br>
+            <input type="password" placeholder="Enter Password" size="30px"> <br>
+             <a href="">forget password</a>
+            <button>LOGIN</button>
+            
+        </div>
+        <div class="txt">
+            <p >don't have an account? <span><a href="regestration.html">register now </a></span></p>
+            </div>
+    </form>
+    </div>
+</body>
+</html>

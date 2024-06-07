@@ -1,0 +1,156 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
+</head>
+
+<body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+    <header>
+        <nav
+            class=" flex flex-row justify-between items-center  rounded border-2 border-solid border-slate-300 m-1 bg-slate-300">
+            <div class="flex">
+                <img class=" w-[5rem] h-[4rem] ml-[10px] " src="image.png" alt="logo">
+                <h1 class="mt-5 capitalize  font-semibold text-xl ">E-commerce</h1>
+            </div>
+            <div>
+                <ul class="hidden md:flex flex-row gap-6  m-6 font-medium capitalize  ">
+                    <li>home</li>
+                    <li>about us </li>
+                    <li>sevices</li>
+                    <li>contact us </li>
+                    <li>log in </li>
+                </ul>
+            </div>
+            <div class="flex flex-row gap-4 m-6 pl-16">
+                <i class="fa-solid fa-user"></i>
+                <i class="fa-solid fa-gears"></i>
+            </div>
+        </nav>
+    </header>
+    <!-- craousel start -->
+    <section>
+        <div id="default-carousel" class="relative w-full" data-carousel="slide">
+            <!-- Carousel wrapper -->
+            <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
+                <!-- Item 1 -->
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                    <img src="student.jpg"
+                        class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                </div>
+                <!-- Item 2 -->
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                    <img src="pk1.webp" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                        alt="...">
+                </div>
+                <!-- Item 3 -->
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                    <img src="edu.png" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                        alt="...">
+                </div>
+
+            </div>
+            <!-- Slider indicators -->
+            <div class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse">
+                <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1"
+                    data-carousel-slide-to="0"></button>
+                <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2"
+                    data-carousel-slide-to="1"></button>
+                <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3"
+                    data-carousel-slide-to="2"></button>
+
+            </div>
+            <!-- Slider controls -->
+            <button type="button"
+                class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                data-carousel-prev>
+                <span
+                    class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                    <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M5 1 1 5l4 4" />
+                    </svg>
+                    <span class="sr-only">Previous</span>
+                </span>
+            </button>
+            <button type="button"
+                class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                data-carousel-next>
+                <span
+                    class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                    <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="m1 9 4-4-4-4" />
+                    </svg>
+                    <span class="sr-only">Next</span>
+                </span>
+            </button>
+        </div>
+    </section>
+    <!-- craousel end -->
+    <!-- product section  start-->
+    <section>
+        <div class="  flex flex-col justify-center items-center m-10">
+            <h1 class="font-extrabold size-2xl uppercase leading-9">new collections for summer sale </h1>
+            <p class="size-xs">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus cumque, quaerat repellat, Unde eius
+                ipsa rerum perferendis autem nisi!</p>
+        </div>
+        <div class="flex flex-row items-center justify-center px-2 gap-4 w-full h-[60vh]">
+            <div class="border-2 border-black p-2 bg-slate-200 ">
+                <img  class="h-40 w-64 object-cover object-top " src="colth2.png" alt="">
+                <h2 class="font-bold capitalize size-xl">price:499 </h2>
+                <p class="font-medium capitalize">product 1</p>
+                <button class="border-1 border-solid  bg-amber-400 p-1.2 px-2 rounded-xl"> buy now </button>
+            </div>
+            <div class="border-2 border-black p-2 bg-slate-200 ">
+                <img  class="h-40 w-64 object-cover object-top " src="imgage/cloth3.png" alt="">
+           
+                <h2 class="font-bold capitalize size-xl">price:999 </h2>
+                <p class="font-medium capitalize">product 2</p>
+                <button class="border-1 border-solid  bg-amber-400 p-1.2 px-2 rounded-xl"> buy now </button> </div>
+            <div class="border-2 border-black p-2 bg-slate-200 ">
+                <img class="h-40 w-64 object-cover object-top  " src="imgage/cloth6.png" alt="">
+            
+                <h2 class="font-bold capitalize size-xl">price:1299 </h2>
+                <p class="font-medium capitalize">product 3</p>
+                <button class="border-1 border-solid  bg-amber-400 p-1.2 px-2 rounded-xl"> buy now </button></div>
+        </div>
+    </section>
+    <!-- footer start -->
+     <section>
+        <footer class="border-2 border-solid border-zinc-500 bg-zinc-500 w-[100rem] h-80">
+            <div class="flex  gap-2">
+
+                <img class=" w-[5rem] h-[4rem] ml-[120px] mt-[20px] m " src="image.png" alt="logo">
+                <h1 class="mt-[40px] capitalize  font-semibold text-2xl ">E-commerce</h1>
+            </div>
+            <div>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic reprehenderit reiciendis similique.
+                    Mollitia facilis, obcaecati earum soluta tempore sunt natus recusandae, nisi, facere iste esse
+                    repudiandae. Vero nostrum voluptatibus ea.</p>
+                <span class="gap-6">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                </span>
+            </div>
+            <div class="flex flex ">
+                <p> get in touch </p>
+                <p><i class="fa-solid fa-phone"></i>207-8767-452</p>
+                <p><i class="fa-brands fa-whatsapp"></i> 082-245-7253</p>
+                <p><i class="fa-solid fa-envelope"></i>support@gmail.com</p>
+            </div>
+        </footer>
+    </section> 
+</body>
+
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>react classes</title>
+</head>
+<body>
+    <h2>javascript string</h2>
+    <p>length property</p>
+<!--     
+     <p id="magic"></p> 
+     <p id="super"></p>
+    <p id="self"></p>
+    <p id="fragrance"></p> -->
+    <p id="kind"></p> 
+        <!-- <p id="grim"></p> -->
+
+    <script>
+//         let k = "Geetika";
+// document.getElementById('damage').innerHTML = k.length;
+
+
+        class inherit{
+            constructor(car){
+                this.name = car;
+            }
+            present() {
+                return 'i have a'+' '+this.name;
+            }
+        }
+        let c = new inherit("ford");   
+        document.getElementById('magic').innerHTML=(c.present());
+
+        class name {
+            constructor(fruit) {
+                this.fname=fruit;
+            }
+        }
+        let m = new name('apple');
+        document.getElementById('grim').innerHTML = (m.fname);
+
+
+
+//         class car{
+//             constructor(name){
+//                 this.brand=name;
+//             }
+//             present() {
+//                 return "i have a"+ " "+this.brand;
+//             }
+//         }
+//         let t=new car("mercedes");
+//         document.getElementById('super').innerHTML=(t.present());
+
+//         class eat{
+//             constructor(fruits){
+//                 this.name=fruits;
+//             }
+//         present() {
+//             return "i like"+ " " +this.name;
+//         }
+//         }
+//         let z=new eat("strawbeery");
+//         document.getElementById('self').innerHTML=(z.present());
+
+//         class phoria{
+//             constructor(aroma){
+//                 this.brand=aroma;
+//             }
+//             present(){
+//                 return this.brand+ ' '+'is my favourite brand';
+//             }
+//         }
+//         let g=new phoria('Aroma magic');
+//         document.getElementById('fragrance').innerHTML=(g.present());
+//         let h=new phoria(' BMW');
+//         document.getElementById('kind').innerHTML=(h.present());
+
+// arrow functions
+     name = () => {
+        return "hello my name is Geetika"
+     }        
+     document.getElementById('kind').innerHTML = name();
+
+        
+    </script>
+</body>
+</html>

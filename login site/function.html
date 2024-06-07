@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="start"></p>
+    <p id="demo"></p>
+    <script>
+        // function myfunction (p1,p2,p3){
+        //     return p1*p2*p3
+        // }
+        // let result=myfunction(5,6,7);
+        // document.write(result);
+        // let s=myfunction(7,8);
+        // document.write(s);
+        
+    // conditional statements
+    const a= new Date().getHours();
+     if (a<16){
+        wish="good afternoon";
+     }
+     else if (a<12){
+        wish="good morning";
+     }
+     else{
+        wish="good evening";
+     }
+     document.getElementById('start').innerHTML= wish
+
+     let b=5;
+     let c=6;
+     if (b<c){
+        number="yes b is less than c";
+     }
+     else {
+       number="yes c is less than b";
+     }
+     document.getElementById('demo').innerHTML=number
+      
+
+    
+    
+    // javascript dates
+//   6 ways to write the date object
+//    new Date(year,month);
+//    new Date(year,month,day);
+//    new Date(year,month,day,hours);
+//    new Date(year,month,day,hours,minutes);
+//    new Date(year,month,day,hours,minutes,seconds);
+//    new Date(year,month,day,hours,minutes,seconds,ms);
+
+
+    // let x=new Date();
+    //   document.write(x);
+
+    </script>
+</body>
+</html>

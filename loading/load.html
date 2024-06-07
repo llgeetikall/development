@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pacman</title>
+</head>
+<style>
+    body{
+        place-items: center;
+        min-height: 100vh;
+        display: grid;
+        font-size: 5em;
+        background-color:#fff; 
+        margin: 0;
+    }
+    /* time: speed of animation 
+    size:dos*/
+    /* .pacman-loader{
+        --dotssize:0.4em;
+        width: 2em;
+        background-position: 50%;
+        aspect-ratio: clamp(2, var(--size, 3), 10);
+        background-image: radial-gradient(closest-side circle,var(--dots,#fff) 35%,#fff0 0);
+        background-size:  var(--dotssize, 0.4em) 100%;
+        background-position: var(--dotssize,0.4) 50%;
+        animation: move var(--time, 0.4s) linear infinite;
+        position: relative;
+        overflow: clip;
+        text-indent: 2em;
+        user-select: none;
+    
+    }  */
+   
+</style>
+<body>
+    <div class="pacman-loader" aria-live="polite">Loading...
+        <svg width="100" height="100">
+            <circle cx="50" cy="50" r="40"  stroke-width="3" fill="yellow" />
+          </svg>
+    <div class="content">
+    <canvas id="mycanvas"> </canvas> </div>
+  </div>
+    <script>
+        var c = document.getElementById("mycanvas");
+        var ctx = c.getContext("2d");
+        ctx.beginPath();
+        ctx.arc(95,50,40,1,2 * Math.PI);
+        ctx.stroke();
+        
+    </script>
+</body>
+</html>

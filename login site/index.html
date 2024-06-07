@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login page </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant&family=Playfair+Display:ital@0;1&display=swap" rel="stylesheet">
+    <style>
+    * {
+      font-family: "Cormorant", serif;
+      background-color: azure;
+    }
+    :root {
+            --btn-size: .8rem;
+            --small-size: .75rem;
+    }
+    .bg {
+        background-color: floralwhite;
+      }
+    .login-card {
+          width: calc(100% - 13rem);
+    }
+    .login-card h2 {
+             color:#324475 ;
+    }
+   .login-card p {
+        color:#313131;
+        font-size:medium;
+   }
+   .form-control{
+        outline:none;
+        box-shadow:none;
+        /* border: var(--bs-border-width) solid var(--bs-border-color); */
+   }
+      
+    </style>
+</head>
+<body>
+    <div class="container py-5 px-5" bg>
+      <div class="row justify-content-between bg-white rounded-start-4">
+        <div class="col-lg-7 d-flex justify-content-center align-items-center">
+          <div class="login-card py-lg-0 py-5">
+            <h2 class="fw-semibold"> Welcome back</h2>
+            <p class="fw-light">Welcome back! Please login your Account</p>
+            <form action="index.html" class="form">
+              <div class="row">
+                <div class="mb-3 col-12">
+                 <label for="email" class="mb-1 fw-medium">Login</label>
+                 <input type="email" class="form-control" placeholder="Enter Email">
+               </div>
+               <div class="col-12">
+                 <label for="pass" class="mb-1 fw-medium"> Password </label>
+                 <input type="password" class ="form-control" placeholder="Enter Password">
+                </div>
+                  <div class="col-12 d-flex justify-content-between mt-3 checkbox">
+                    <div class="d-flex">
+                     <input type="checkbox" class="form-check-input">
+                     <label for="Remember"> Remember Password</label>
+                    </div> 
+                     <a href="#" class="fw-semibold text-decoration-none"> forget password </a>
+                  </div> 
+              </div>     
+                   <button type="submit" class="btn mt-4 w-100">sign in</button>
+                   <button type="submit" class="btn mt-4 w-100 d-flex justify-content-center align-items-center">log in with apple</button>
+                  <button type="submit" class= "btn mt-4 w-100 d-flex justify-content-center align-items-center">log in with google</button>
+            </form>
+           <p class="text-center signup mt-4">dont have account? <a class="text-decoration-none fw-semibold">sign up now </a></p>
+          </div> 
+        </div >
+        <div class="col-lg-5 col-12 p-0"> 
+         <img src="https://images.unsplash.com/photo-1611042553484-d61f84d22784?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=464&q=80"" >
+        </div>
+      </div>
+    </div>
+</body>
+
+</html>

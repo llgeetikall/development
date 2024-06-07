@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <form action="index.html">
+    <p style="outline : dotted;">fuhf</p>
+    <label for="cars"> Choose a Car :</label>
+    <select name="cars" id="cars">
+      <option value="swift">Swift</option>
+      <option value="audi">Audi</option>
+      <option value="volvo" selected>Volvo</option>
+      <option value="desire">desire</option>
+    </select>
+    <textarea name="message" cols="30" rows="10" >
+      The cat is playing in the garden 
+    </textarea>
+    <button type="button" onclick="alert('Good Morning')" > on click</button>
+    <fieldset>
+      <legend>Registration</legend>
+      <label for="fname"> First Name</label><br>
+      <input type="text" name="fname" id="fname"><br>
+      <label for="lname"> Password</label><br>
+      <input type="password" name="lname" id="lname"><br>
+      <input type="submit" name="submit" value="save">
+      <input type="reset" value="reset">
+      <input type="color" value="reset">
+      <input type="date">
+      <label for="datemax">date before</label>
+      <input type="date" max="2005-10-01" min="2001-11-10">
+      <label for="datemin">date after</label>
+      <input type="date" min="1980-11-09">
+      <input type="datetime-local">
+      <input type="email">
+      <input type="image" src="img/shirt1.jpg" width="" height="">
+      <input type="file">
+      <input type="month">
+      <input type="number" name="" id="">
+      <input type="search">
+      <input type="url">
+      <input type="week">
+      <label for="fname">First Name</label><br>
+      <input type="text" name="fname" id="fname" value="Geetika" readonly size="12"><br>
+      <label for="fname">pin</label><br>
+      <input type="text" name="lname" id="lname" size="6" maxlength="6" ><br>
+
+
+    </fieldset>
+
+    <input list="schools">
+    <datalist id="schools">
+      <option value="DPS"></option>
+      <option value="SD"></option>
+      <option value="ABC"></option>
+    </datalist>
+    <input type="tel" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+    <input type="text" pattern="[A-Z 0-3]{6}">
+    <label for="points">Points</label>
+    <input type="number" id="points" name="points" step="5">
+
+  </form>
+
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+     placeholder{
+        color:darkgrey;
+     }
+     input[type=text]{
+        border-radius:4px;
+        background-color: rgb(225, 251, 251);
+        color:crimson;
+        border: solid pink;
+     }
+    .outside{
+        margin:20px 19px;
+        padding:12px 8px;
+        background-color:cadetblue;
+    } 
+    
+    </style>
+</head>
+
+<body>
+    <p class="outside"> this is heading</p>
+    <form>
+        <label for="phone"> Enter your phone number:</label>
+        <input type="tel" id="phone" pattern="[0-9](2)-[0-9](5)-[0-9](5)" placeholder=" +91-98886-45627" required/> <br>
+        <input type="submit"/> <br>
+        <p > HTML colors are specified with predefined color names, or with RGB, HEX, HSL, RGBA, or HSLA values.</p>
+        <label for="text"> Enter your name: </label>
+        <input type="text" id="text" placeholder="Your name">   <br>
+    </form>
+    <!-- js can change the html content -->
+    <h3> what can js do?</h3>
+    <p id="class"> js can change the html content </p>
+    <button onclick="document.getElementById('class').innerHTML='good morning'"> try it </button>
+     <br>
+     <!-- js can change the html style -->
+     <h3> what can js do?</h3>
+    <p id="demo"> js can change the html style </p>
+    <button onclick="document.getElementById('demo').style.fontSize='20px'"> try it </button>
+    <br>
+    <h3> what can js do?</h3>
+    <p id="sub"> js can change the html style </p>
+    <button onclick="document.getElementById('sub').style.fontFamily='copperplate,fantasy'"> try it </button>
+    <br>
+    <!-- hide the html content -->
+    <h3> what can js do?</h3>
+    <p id="head"> js can hide the html content </p>
+    <button onclick="document.getElementById('head').style.display='none'"> try it </button>
+    <br>
+    <!-- show the html content -->
+    <h3> what can js do?</h3>
+    <p id="turn" style="display:none"> js can show the html content</p>
+    <button onclick="document.getElementById('turn').style.display='block'">click on the button </button>     
+    <br>
+    <!-- bulb on off -->
+    <h3> what can js do?</h3>
+    <p> js can the html attribute value </p>
+    <button onclick="document.getElementById('source').src='images/bulb_on.gif'"> turn on the light </button>
+ <img id="source" src="images/bulb_off.gif">
+    <button onclick="document.getElementById('source').src='images/bulb_off.gif'"> turn off the light </button>
+<br>
+    <!-- <h3> what can js do?</h3>
+    <p id="date" > js can show the html content</p>
+    <button onclick="document.getElementById('date').innerhtml='date()'">click </button>     
+<br> -->
+
+</body> 
+</html> 

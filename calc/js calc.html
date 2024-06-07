@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <label for="" id="first">1 number</label>
+    <input type="text" >
+     <br> <br>
+    <label for="" id="second">2nd number</label>
+    <input type="text" > 
+    <br> <br>
+    <button id="result" onclick=addBy().value +="+">add</button>  
+     <button id="substraction" onclick=sub().value += '-'>subs</button>
+    <button id="multi" onclick=multiply().value += '*'>multiply</button>
+    <button id="divison" onclick=divide().value += '/'>divide</button>
+    <br> <br>
+    <p id="result"></p>
+
+
+    <!-- <p> table</p>
+    <p id="tab"></p>
+    <p id="tabular"></p>
+    <p id="demo"></p>
+    <p id="torque"></p>
+    <p id="reuse"></p>
+    <p id="unknown"></p>
+    <p id="known"></p>
+    <p id="rewind"></p>
+    <p id="rewrite"></p>
+    <p id="report"></p>
+
+    <p id="part"></p> -->
+<!-- <P id="try"></P> -->
+        <!-- <input type="text" id="first" name="first"/>
+        <input type="text" id="second" name="second"/>
+        <input type="text" id="third" name="third"/>
+        <br>
+        <input type="button" value="Solve" onclick="calc()"/>
+        <p id="result"></p> -->
+
+    <script>
+        // function calc(){
+        //     a = document.getElementById('first').value;
+        //     b = document.getElementById('second').value;
+        //     c = document.getElementById('third').value;
+        //     d = "";
+        //     if(b == "+"){
+        //         d = a+c;
+        //     }
+        //     elseif (b == "-")
+        //     {
+        //         d = a-c;
+        //     }
+        //     elseif (b == "*")
+        //     {
+        //         d = a*c;
+        //     }
+        //     elseif (b == "/")
+        //     {
+        //         d = a/c;
+        //     }
+        //     document.getElementById('result').innerHTML=d;
+        // }
+        function addBy() {
+            a = document.getElementById('first').value;
+            b = document.getElementById('second').value;
+            document.getElementById('result').innerHTML=a+b;
+        }
+
+        function sub() {
+            a = document.getElementById('first').value;
+            b = document.getElementById('second').value;
+            document.getElementById('substraction').innerHTML=a-b;
+        }
+        function multiply() {
+            a = document.getElementById('first').value;
+            b = document.getElementById('second').value;
+            document.getElementById('multi').innerHTML=a*b;
+        }
+        function divide() {
+            a = document.getElementById('first').value;
+            b = document.getElementById('second').value;
+            document.getElementById('divison').innerHTML=a/b;
+        }
+            // function myfunction (a,b) {
+            //     return a*b
+            // }
+            // let zero = myfunction(2,1);
+            // document.getElementById('tab').innerHTML= zero;
+            // let first = myfunction(2,2);
+            // document.getElementById('tabular').innerHTML=first;
+            // let two = myfunction(2,3);
+            // document.getElementById('demo').innerHTML= two;
+            // let three = myfunction(2,4);
+            // document.getElementById('torque').innerHTML= three;
+            // let four = myfunction(2,5);
+            // document.getElementById('reuse').innerHTML= four;
+            // let five = myfunction(2,6);
+            // document.getElementById('unknown').innerHTML= five;
+            // let six = myfunction(2,7);
+            // document.getElementById('known').innerHTML= six;
+            // let seven = myfunction(2,8);
+            // document.getElementById('rewind').innerHTML= seven;
+            // let eight = myfunction(2,9);
+            // document.getElementById('rewrite').innerHTML= eight;
+            // let nine= myfunction(2,10);
+            // document.getElementById('report').innerHTML= nine;
+
+            // print table using  forloop
+            //  let n = " 5";
+            //  for (let i = 1; i <= 10; ++i)
+            //  console.log(n + "*"+ i + "=" + n*i);
+            
+            // let s = '4';
+            // for (let i =1; i<=10; ++i){
+            //     text += s + "*" + i + "=" + s*i
+            // }
+            // document.getElementById('try').innerHTML = text;
+
+</script>
+
+</body>
+</html>

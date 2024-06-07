@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
+*{
+    box-sizing: border-box;
+    font-family:"poppins";
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background:  #141531;
+    align-items: center;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center; 
+}
+ .container{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+     width: 256px;
+    height: 256px; 
+}
+.container span {
+    position: absolute;
+    left: 0;
+     width: 31px;
+     height: 5.5px; 
+    background: #2c4766;
+    border-radius: 8px;
+    transform-origin: 128px;
+    transform: scale(2.2) rotate(calc(var(--i) * (360deg / 50)));
+    animation: animateBlink 3s linear infinite;
+    animation-delay: calc(var(--i) * (3s / 50));
+  }
+  @keyframes animateBlink {
+    0%{
+        background: rgb(100, 233, 224);
+    }
+    25%{
+        background:#272962
+    }
+  }
+.login-box{
+    position: absolute;
+    width: 400px;
+}
+.login-box form{
+    width: 100%;
+    padding:0 50px;
+}
+
+h2{ 
+    font-size: 2em;
+    color:  rgb(100, 233, 224);
+    text-align: center;
+}
+.inp{
+    position: relative;
+    margin: 25px;
+}
+.inp input{
+    border-radius: 35px;
+    border: 2px solid #272962;
+    background: transparent;
+    width: 100%;
+    height: 50px;
+    outline: none;
+    padding:0 20px;
+    transition: 0.5s;
+    color: #ddd;
+    font-size: 1em;
+} 
+.inp input:focus,
+.inp input:valid{
+    border: 1px solid rgb(100, 233, 224) ;
+}
+.inp label{
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    font-size: 1em;
+    transition: 0.5s;
+    color: #ddd;
+    pointer-events: none;
+    transform: translateY(-50%);
+}
+.inp input:focus ~ label,
+.inp input:valid ~ label {
+ background-color:#272962 ;
+ top: 1px;
+ font-size: 0.9em;
+ padding: 0 6px;
+ color: rgb(100, 233, 224) ;
+}
+.pass{
+    margin: -14px 0 10px;
+    text-align: center;
+}
+.pass a{
+    color: #ddd;
+    font-size: 0.9em;
+    text-decoration: none;
+}
+.signup{
+    text-align: center;
+}
+.signup a{
+    text-decoration: none;
+    font-size: 1.8em;
+    font-weight: 600;
+    color: rgb(100, 233, 224);
+}
+.pass a:hover{
+    text-decoration: underline;
+}
+.signup a:hover{
+    text-decoration: underline;
+}
+.btn {
+    width: 100%;
+    height: 45px;
+    border-radius: 45px;
+    background: rgb(100, 233, 224);
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 1em;
+    color: #1f293a;
+    font-weight: 600;
+  }
+  

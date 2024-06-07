@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: "Poppins", sans-serif;
+        background-color: #173f5f;
+    }
+
+    header {
+        background: #173f5f;
+        display: flex;
+        justify-content: space-between;
+        padding: 14px;
+    }
+
+    a {
+        text-decoration: none;
+        color: #fff;
+    }
+
+    .brand {
+        text-transform: uppercase;
+        font-size: 30px;
+        font-weight: 700;
+        padding-left: 12px;
+    }
+
+    .brand span {
+        color: rgb(228, 169, 4);
+    }
+
+    .navbar a {
+
+        margin-left: 12px;
+        padding-right: 19px;
+        font-size: 18px;
+        font-weight: 500;
+    }
+
+    .navbar a:hover {
+        border: 2px solid rgb(228, 169, 4);
+        background: #254d6e;
+        padding: 8.5px 9px 8.5px 9px;
+        border-radius: 2px;
+    }
+
+    .background {
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+
+    }
+
+    .background::before {
+        content: " ";
+        background-image: url(img/student.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        opacity: 0.2;
+    }
+
+    .txt {
+        justify-content: center;
+        text-align: center;
+        text-transform: uppercase;
+        padding-top: 190px;
+    }
+
+    .txt h3 {
+        color: #fff;
+        font-size: 0.9em;
+        font-weight: 400;
+        margin-top: -29px;
+    }
+
+    .txt h2 {
+        color: #fff;
+        font-size: 2.8em;
+        font-weight: 700;
+        margin-top: 11px;
+        margin-bottom: 18px;
+        /* text-transform: uppercase; */
+    }
+
+    .txt h2 span {
+        color: #ffb703;
+    }
+
+    .txt .btn {
+        background: rgb(238, 177, 10);
+        color: #fff;
+        border: 1px solid rgb(238, 177, 10);
+        padding: 9px 10px 6px 11px;
+        border-radius: 1px;
+    }
+
+    .base_btn {
+        margin-top: 390px;
+    }
+
+    .base_btn .btn1 {
+        border: 1px solid #0a2338;
+        border-radius: 1px;
+        padding: 20px 58px 14px 60px;
+        margin-right: -5px;
+        background: #011547;
+        color: #fff;
+        font-size: 13px;
+        text-transform: uppercase;
+
+    }
+    
+    .cardContent{
+        display: flex;
+        justify-content: space-between;
+        margin-right: -10px;
+    }
+    .card {
+        border: 1px solid #ffb703;
+        width: 228px;
+        height: 128px;
+        margin-left: -34px;
+        background-color: #ffb703;
+    }
+    .card p {
+        margin-top: 2px;
+        margin-right: 4px;
+        font-size: 0.6em;
+        color: #fff;
+    }
+
+    .card p i {
+        color: #fff;
+    }
+
+    .bkg {
+        background-color: #011547;
+        min-height: 90vh;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .bkg .btn2 {
+        border: 2px solid grey;
+        background: #011547;
+        color: #fff;
+        padding: 9px 14px 9px 13px;
+        margin-top: 100px;
+    }
+
+    .bt2 p {
+        margin-top: 70px;
+        margin-right: 150px;
+        font-size: 18px;
+        font-weight: 400;
+    }
+
+    .bkg p span {
+        color: #fff;
+        margin-left: 240px;
+
+    }
+
+    p span:hover {
+        color: #ffb703;
+    }
+</style>
+
+<body>
+    <header>
+        <div class="brand">
+            <a href="#"><span> grad </span> School</a>
+        </div>
+        <nav class="navbar">
+            <a href="#"> Home </a>
+            <a href="#"> About us</a>
+            <a href="#">Courses</a>
+            <a href="#">Contact</a>
+            <a href="#">External</a>
+        </nav>
+    </header>
+    <section>
+        <div class="background">
+            <div class="txt">
+                <h3>Graduate school of management</h3>
+                <h2> <span>Your</span> classroom</h2>
+                <button class="btn"> DISCOVER MORE</button>
+                <div class="base_btn">
+                    <button class="btn1">more info.</button>
+
+                    <button class="btn1"><i class="fa-solid fa-graduation-cap"></i> virtual class </button>
+                    <button class="btn1"><i class="fa-solid fa-book"></i> real meeting</button>
+                    <div class="cardContent">
+                        <div class="card">
+                            <p> <i class="fa-solid fa-pencil"></i> All Courses</p>
+                            <p>In information theory, the information content, self-information, surprisal of a
+                                particular event occurring from a random variable.much like odds or log-odds, but which
+                                has particular mathematical advantages in the setting of information theory.</p>
+                        </div>
+                        <div class="card">
+                            <p> <i class="fa-solid fa-pencil"></i> All Courses</p>
+                            <p>In information theory, the information content, self-information, surprisal of a
+                                particular event occurring from a random variable.much like odds or log-odds, but which
+                                has particular mathematical advantages in the setting of information theory.</p>
+                        </div>
+                        <div class="card">
+                            <p> <i class="fa-solid fa-pencil"></i> All Courses</p>
+                            <p>In information theory, the information content, self-information, surprisal of a
+                                particular event occurring from a random variable.much like odds or log-odds, but which
+                                has particular mathematical advantages in the setting of information theory.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="bkg">
+            <button class="btn2">Why Choose Grad School?</button>
+            <p> <span>Best management</span> <span>Top management</span> <span>Quality Meeting</span></p>
+        </div>
+    </section>
+</body>
+
+</html>

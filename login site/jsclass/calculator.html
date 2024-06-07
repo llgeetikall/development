@@ -1,0 +1,71 @@
+<script>
+    function sum(){
+        var a,b,c;
+        a= document.getElementById("t1").value;
+        b= document.getElementById("t2").value;
+        c= parseInt(a) + parseInt(b);
+        // document.getElementById("d1").innerHTML=c;
+        window.alert(c)
+    }
+    function mul(){
+        var a,b,c;
+        a= document.getElementById("t1").value;
+        b= document.getElementById("t2").value;
+        c= parseInt(a) * parseInt(b);
+        // document.getElementById("d1").innerHTML=c;
+        // document.write(c)
+        window.alert(c)
+    }
+    function divide(){
+        var a,b,c;
+        a= document.getElementById("t1").value;
+        b= document.getElementById("t2").value;
+        c= parseInt(a) / parseInt(b);
+        // document.getElementById("d1").innerHTML=c;
+        window.alert(c)
+    }
+    function clear_rec(){
+        var a,b,c;
+        document.getElementById("t1").value="";
+        document.getElementById("t2").value="";
+        document.getElementById("d1").value="";
+        document.getElementById("t1").focus();
+    }
+</script>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table border="2" align="center">
+        <tr>
+            <td>
+                Enter First Number
+            </td>
+            <td>
+                <input type="number" id="t1">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Enter Second Number
+            </td>
+            <td>
+                <input type="number" id="t2">
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" align="center">
+                <input type="button" value="sum" onclick="sum()">
+                <input type="button" value="mul" onclick="mul()">
+                <input type="button" value="divide" onclick="divide()">
+                <input type="button" value="reset" onclick="clear_rec()">
+            </td>
+        </tr>
+    </table>
+    <p id="d1"></p>
+</body>
+</html>

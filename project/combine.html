@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> combine </title>
+<!-- <link rel="stylesheet" href="newstyle.css"> -->
+</head>
+<style>
+  body{
+    background: linear-gradient(blue 50%, #fff 50%);
+    min-height: 100vh;
+  }
+</style>
+<body >
+    <div class="colorpicker">
+        <input type="color" id="colorpicker" onchange="updatecolor()">
+    </div>
+    <script>
+        let color = document.getElementById('colorpicker');
+        function updatecolor() {
+            document.getElementById('displaycolor').style.backgroundColor = color.value;
+        } 
+    </script>
+</body>
+</html>
